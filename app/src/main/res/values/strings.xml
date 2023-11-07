@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BlockchainID</string>
+
+    <string name="txt_nav_add">Add Card</string>
+    <string name="txt_nav_my">My Card</string>
+    <string name="txt_nav_inspirations">Inspirations</string>
+    <string name="txt_btn_try_now">Add Now</string>
+    <string name="txt_pro" translatable="false">Pro</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="txt_welcome_title">Save your Information on App!</string>
+    <string name="txt_welcome_subtitle">Protect your personal information with high assurance and security.</string>
+    <string name="txt_title_upload_photo">Upload Your Info</string>
+    <string name="txt_title_upload">Select your ID card to scan information</string>
+
+</resources>
