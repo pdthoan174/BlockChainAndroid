@@ -69,4 +69,7 @@ dependencies {
     // define any required OkHttp artifacts without version
     implementation("com.squareup.okhttp3:okhttp")
     implementation("com.squareup.okhttp3:logging-interceptor:3.9.0")
+
+    implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.24")
+
 }

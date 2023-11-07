@@ -111,7 +111,7 @@
             <ImageView
                 android:id="@+id/iv_id_card"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_130sdp"
+                android:layout_height="@dimen/_140sdp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_card_id"
                 />
@@ -123,6 +123,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
             android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
             android:background="@drawable/bg_button_normal"
             android:clickable="true"
             android:focusable="true"
@@ -156,10 +157,143 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
 
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/bg_button_normal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="ID Card: "
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/tv_id_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/bg_button_normal"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:hint="ID Card"
+                android:inputType="number"
+                android:paddingTop="@dimen/_5sdp"
+                android:textColor="@color/blue_grey"
+                android:textColorHint="@color/grey_400"
+                android:textSize="@dimen/_13sdp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/bg_button_normal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Name: "
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/bg_button_normal"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:hint="Name"
+                android:inputType="text"
+                android:paddingTop="@dimen/_5sdp"
+                android:textColor="@color/blue_grey"
+                android:textColorHint="@color/grey_400"
+                android:textSize="@dimen/_13sdp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/bg_button_normal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Sex: "
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/tv_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/bg_button_normal"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:hint="Sex"
+                android:inputType="text"
+                android:paddingTop="@dimen/_5sdp"
+                android:textColor="@color/blue_grey"
+                android:textColorHint="@color/grey_400"
+                android:textSize="@dimen/_13sdp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/bg_button_normal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Address: "
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/bg_button_normal"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:hint="Name"
+                android:inputType="text"
+                android:paddingTop="@dimen/_5sdp"
+                android:textColor="@color/blue_grey"
+                android:textColorHint="@color/grey_400"
+                android:textSize="@dimen/_13sdp"
+                />
+        </LinearLayout>
     </LinearLayout>
-
-
 
     <androidx.cardview.widget.CardView
         android:id="@+id/container_btn_continue"
@@ -173,32 +307,45 @@
 
         app:layout_constraintStart_toStartOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/btn_select_photo"
+        <LinearLayout
+            android:id="@+id/btn_scan"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
+            android:gravity="center"
             android:background="@drawable/bg_button_gradient"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?attr/selectableItemBackgroundBorderless"
             android:textColor="@color/white"
+            android:orientation="horizontal"
             android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:indicatorSize="@dimen/_20sdp"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/process_bg_white"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:visibility="gone"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
 
             <TextView
                 android:id="@+id/tv_btn_apply"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:fontFamily="@font/roboto_bold"
                 android:includeFontPadding="false"
                 android:text="Scan ID card"
                 android:textColor="@color/back_ground"
                 android:textSize="@dimen/_12ssp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                 />
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
